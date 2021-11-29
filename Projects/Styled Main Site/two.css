@@ -1,0 +1,31 @@
+span{
+       height:50px;
+       width:75px ;
+       background:burlywood;
+       display:inline-block;
+       /*float:right; */
+     /*  visibility:hidden; */
+}
+
+div{
+    height:100px;
+    width:200px;
+    background:chartreuse;
+    display:table-cell;
+    overflow:scroll;
+    /*clear:both; */
+}
+
+p{
+    height:200px;
+    width:500px;
+    background:cornflowerblue;
+    float:left;
+    overflow:scroll;
+   /* clear:both; */
+}
+
+body{
+    display:table;
+}
+

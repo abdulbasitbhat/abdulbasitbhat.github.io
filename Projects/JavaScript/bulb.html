@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title>
+        JavaScript
+    </title>
+</head>
+<body id='A'>
+
+<!--Bulb On Off-->
+<img id="bulb" src="off.jfif">
+<button onclick="document.getElementById('bulb').src='on.jfif'">Turn On</button>
+<br>
+<button onclick="document.getElementById('bulb').src='off.jfif'">Turn Off</button>
+
+<!--JavaScript Affecting CSS-->
+<hr>
+<p id="1">JavaScript is a good thing to learn</p>
+<button onclick="document.getElementById('1').style.fontSize='20px'">Click</button>
+
+<!--JavaScript can hide Elements-->
+<hr>
+<p id="2">Garbage</p>
+<button onclick="document.getElementById('2').style.display='none'">Hide</button>
+
+<!--Javascript can show hidden elements-->
+<br>
+<button onclick="document.getElementById('2').style.display='block'">Show Again</button>
+
+<!--In HTML, JavaScript code is inserted between <script> and </script> tags.-->
+<hr>
+<p id='3'></p>
+<script>
+document.getElementById('3').innerHTML="Printed Using Javascript";
+</script>
+
+<!--Functions in JavaScript-->
+<hr>
+<script>
+    function button_click(){
+        document.getElementById('4').innerHTML=" Yes He is";
+    }
+</script>
+<p id='4'>Abdul is a Good Boy</p>
+<button onclick="button_click()">Is He</button>
+
+<!--External Javascript--> <!--Not working-->
+<hr>
+<script src="script.js"></script>
+<p id='5'>JavaScript is a good thing to learn</p>
+<button onclick="change_font()">Change</button>
+
+<!--document.write-->
+<hr>
+<script>
+    document.write('JavaScript By Abdul Basit');
+</script>
+
+<hr>
+<button onclick="document.write('yes Javascript')">Hit</button>
+
+<!--window.alert-->
+<script>
+   // window.alert("Please Dont Pollute My site");
+</script>
+
+<!--console.log-->   <!--Not Working-->
+<hr>
+<script>
+    console.log(5);        
+</script>
+
+<!--Print(Hard Copy)-->
+<button onclick="window.print()">Print</button>
+
+<!--Using varaibles-->
+<hr>
+<p>1+2 is</p>
+<p id='6'>6</p>
+<button onclick="correct()">Correct This</button>
+<script>
+    function correct(){
+        var correctVal=3;
+         document.getElementById('6').innerHTML=correctVal;
+    }
+</script>
+
+<!--Adding string and numbers-->
+<hr>
+<script>
+    var a="Abdul";
+    var b=a + 2 + 3;
+    document.write(b);
+</script>
+
+<!--BackGround Changing buttons-->
+<hr>
+<button onclick="document.getElementById('A').style.background='grey'">Nignt Mode</button>
+<button onclick="document.getElementById('A').style.background='brown'">Men Mode</button>
+<button onclick="document.getElementById('A').style.background='yellow'">Women Mode</button>
+<button onclick="document.getElementById('A').style.background='#87CEEB'">Boy Mode</button>
+<button onclick="document.getElementById('A').style.background='pink'">Girl Mode</button>
+<button onclick="document.getElementById('A').style.background='white'">Day Mode</button>
+
+<!--Let var const-->
+<hr>
+<script>
+    let x=4;                   //cannot be redeclared. Must be declared b4 use.Block scope
+    document.write(x);
+    var y=5;                   //can be any data type.
+    document.write(y);
+    const z=6;                 //value cant be modified. cant assign value in next line
+    document.write(z);
+</script>
+
+<!--Operators-->
+<!--Every arithmetic operator works. for power ** is used-->
+
+<!--JavaScript Objects-->
+<!--typeof-->
+<script>
+const car={modelname:"Swift",model:"dzire",year:"2013"};
+document.write(car.modelname);
+document.write("  ");
+document.write(car.model);
+document.write("  ");
+document.write(car.year);
+document.write("  ");
+let me="Abdul Basit Bhat";
+document.write(me);
+//let y=2e5;                //Not working in chrome
+//document.write("  ");
+//document.write(y);
+document.write("  ");
+document.write(typeof me);
+</script>
+
+<!--Functions-->
+<br>
+<hr>
+<script>
+    function far_to_cel(far)
+    {
+        return (5/9) * (far-32);
+    }
+    //var o=document.getElementById('7').innerHTML=far_to_cel(50);
+   // var o=far_to_cel(50);
+   // document.write(o);
+   // document.getElementById('7').innerHTML=far_to_cel(32);
+</script>
+<br>
+<hr>
+<p id='7'>50</p>
+<button onclick="document.getElementById('7').innerHTML=far_to_cel(50)">To Celcius</button>
+
+<!--Class Containing function-->
+<script>     //not working
+    const a={
+        firstname:"Abdul Basit",
+        lastname:"Bhat",
+        conc:function(){
+            return this.firstname + " " + this.lastname;
+        }
+    };
+    document.write(a.firstname);
+    document.write("  ");
+    document.write(a.lastname);
+    document.write("  ");
+  // document.write(a.conc());
+    document.write("  ");
+</script>
+
+<!--events-->
+<button onclick="this.innerHTML=Date()">Date</button>
+<hr>
+
+<!--String Length-->
+<script>
+    let u="abcdefghijklmnopqrstuvwxyz";
+    document.write(u.length);
+</script>
+
+<!--Apostropy or inverted commas-->
+<script>
+    let st="abdul\'s Copy"; 
+    document.write(st);
+    document.write("  ");
+    let st2="abdul's copy";
+    document.write(st);
+    document.write("  ");   //both work but first one is better
+</script>
+
+<!--String Functions-->
+<hr>
+<script>
+    let x1="abcd efgh ijkl";
+    let x2=x1.slice(3,10);
+    document.write(x2);
+    document.write("        ");
+    let x3=x1.slice(-10,-3);
+    document.write(x2);
+    document.write("        ");    //-ve args means position is counted from end of string
+    let x4=x1.slice(3);
+    document.write(x4);
+</script>
+
+<!--substring()-->        <!--No negative args-->
+<hr>
+<script>
+    let xa="abcdefghijklmnopqrstuvwxyz";
+    let xb=xa.substring(5,20);
+    document.write(xb);
+</script>
+
+<!--substr()-->            <!--Second arg is length and not index-->
+<hr>
+<script>
+    let ya="mnopqrstuvwxysabcdef";
+    let yb=ya.substr(4,4);
+    document.write(yb);
+    document.write("  ");
+    let str = "Apple, Banana, Kiwi";
+    let part = str.substr(-4);          //Counts from end of string
+    document.write(part);
+</script>
+
+<!--Replace-->   <!--Replaces only first occurance-->
+<hr>
+<script>
+    let abc="I am a big fan of Messi";
+    let def=abc.replace("Messi","Ronaldo");
+    document.write(abc);
+    document.write("    ");
+    document.write(def);
+
+    let ghi=abc.replace(/MESSI/i,"Lavendwoski");   //case insensitive
+    document.write(ghi);
+    document.write("    ");
+    
+    let t="coding ninjas coding is good for coding";  //all occurances replacing
+    let jkl=t.replace(/coding/g,"Programming");
+    document.write(jkl);
+    document.write("    ");
+</script>
+
+
+</body>
+</html>

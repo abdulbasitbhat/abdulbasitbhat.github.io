@@ -1,0 +1,32 @@
+h1{
+    text-align:center;
+    font-variant: small-caps;
+    color:rgb(78, 165, 165);
+}
+img{
+    display:none;
+}
+header{
+    background-color: rgb(114, 121, 128);
+}
+
+h2{
+    color:rgb(19, 197, 34);
+    font-variant:large;
+    font-style:bold; 
+    font-variant:small-caps;
+}
+section{
+    background-color:rgb(177, 78, 223);
+    display:block;
+}
+section,h2{
+    background-color: rgb(87, 80, 80);
+    display:table-row;
+   
+    
+}
+a{
+    color:rgb(152, 228, 29);
+    background-color:rgb(48, 82, 94);
+}

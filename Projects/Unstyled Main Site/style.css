@@ -1,0 +1,43 @@
+body, html{
+    height:100%;
+    margin:0;
+}
+
+
+.bg{
+    background-image:url("Images/car.jpg");
+
+    height:100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html{
+    text-align: center;
+    background-image: url("Images/bac4.jfif");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.bg{
+    background-image:url("");
+
+    height:100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg2{
+    background-image:url("Images/bac4.jfif");
+
+    height:100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

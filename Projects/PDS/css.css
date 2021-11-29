@@ -1,0 +1,13 @@
+h2{
+    background-color: rgb(231, 218, 220);
+    text-align: center;
+}
+iframe{
+    text-align: center;
+    display:inline-block;
+}
+body{
+    background-image:url("Res/img2.png");
+    height:75%;
+    width:75%;
+}
