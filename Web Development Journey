@@ -1,0 +1,24 @@
+I did Introduction to HTML5 course from University of Michigan on Coursera.
+In this Course I learnt:
+1. HTML Tags.
+2. Symantic Tags.
+3. Creating a website to make it accessible to specially abeled.
+4. Newsletter Subscription features.
+5. Day Mode, Night mode and back-to-top features. (However I included Day mode and night mode Buttons after learning JavaScript)
+6. Multi-paging.
+7. Adding multimedia.
+8. Validating HTML code on validator.w3.org
+9. Testing code for accessibility on https://wave.webaim.org/
+10. Simulating problems faced by specially abeled while accessing a website by using Funkify extension.
+11. Hosting website on Github.
+
+
+Using these learnings I made a basic and unstyled website and hosted it on guthub.
+
+Our college website gave me a validation error in 77 lines and some accessibility issues. Hopefully I will be able to provide a better one soon.
+
+After this I worked on CSS and styed my website. However I felt that basic knowledge in CSS is enough to be able to use frameworks like bootstrap and tailwind CSS
+I made a portpolio website on using tailwind CSS. 
+
+After this I started learning JavaScript. In Javascript I learnt to use commands to make day mode and night mode buttons. I learnt to include some even induced real time animation
+like turning a bulb on and off by using buttons.
